@@ -5,6 +5,9 @@ Rails.application.routes.draw do
   # 表示はtoppages/index.html.erbだよ
   root to: 'toppages#index'
   
+  get 'login', to: 'sessions#new'
+  post 'login', to: 'sessions#create'
+  delete 'logout', to: 'sessions#destroy'
   
   
   # ルート/signupにアクセスしたら
