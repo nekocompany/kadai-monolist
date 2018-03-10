@@ -43,3 +43,78 @@ footer {
   font-weight: bold;
   letter-spacing: 0.15em;
 }
+
+/* search */
+.search {
+  margin-bottom: 20px;
+}
+
+/* item */
+/* 修正分 */
+.item .panel-body {
+  height: 120px;    /* Want ボタンが増えたので、70px から 120pxに修正 */
+}
+
+.item .panel-heading {
+  height: 250px;
+}
+.item .panel-heading img {
+  height: 100%;
+  max-width: 100%;
+}
+
+/* 追加分 */
+.item .buttons form {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+
+/*Disallow overqualified elements*/
+/*Element is overqualified, just use #test without element name.*/
+
+/*必要以上の要素名付加は禁止です*/
+/*必要以上に要素名があります。要素名は付けず、*/
+/*IDのみもしくはCLASS名のみで使用してください。*/
+/*ex.)div#hoge => #hoge*/
+
+p.item-title {
+  /* 文の行数を2行に保ち、最後に ... を追加するスタイル */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+
+/* users */
+.user-profile .name {
+  margin-bottom: 20px;
+}
+.user-profile .name h1 {
+  text-shadow: 1px 1px 1px #fff;
+  font-weight: bold;
+}
+.user-profile .status ul {
+  margin: 0 auto 10px;
+  padding: 0;
+  display: table;
+}
+.user-profile .status ul li {
+  width: 120px;
+  padding: 5px 0;
+  border-right: 1px solid #ddd;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #777;
+}
+.user-profile .status ul li:last-child {
+  border: none;
+}
+.user-profile .status ul li .status-label {
+  font-size: 12px;
+}
+.user-profile .status ul li .status-value {
+  font-size: 18px;
+}
