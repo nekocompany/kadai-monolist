@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:show, :new, :create]
   
-  
+  # wantもhaveもownershipsの作成破棄で表現？
   resources :items, only: [:show, :new]
   resources :ownerships, only: [:create, :destroy]
   

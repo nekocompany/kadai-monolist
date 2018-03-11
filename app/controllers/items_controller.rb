@@ -23,7 +23,12 @@ class ItemsController < ApplicationController
   
   def show
     @item = Item.find(params[:id])
+    
+    # Want関係
     @want_users = @item.want_users
+    
+    # Have関係
+    @have_users = @item.have_users
   end
   
 
