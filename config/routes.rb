@@ -22,4 +22,6 @@ Rails.application.routes.draw do
   
   get 'rankings/want', to: 'rankings#want'
   
+  get 'rankings/have', to: 'rankings#have'
+  
 end
